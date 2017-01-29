@@ -29,7 +29,7 @@ body {
 
 body {
   font-family: "Raleway"; 
-  box-sizing: initial; }
+  width: 100%; }
 
 .panel-default {
   border-radius: 0px;
