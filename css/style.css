@@ -8,12 +8,13 @@
   font-family: Raleway;
   src: url(./fonts/Raleway-Regular.ttf); }
 body {
-  background-color: #FAFAFA; }
+  background-color: #FAFAFA;
+  box-sizing: initial; }
 
 .about-text {
   font-size: 120%;
   text-align: justify;
-  margin-bottom: 5%; }
+  margin-bottom: 4%; }
 
 .top-section {
   margin-top: 1%;
