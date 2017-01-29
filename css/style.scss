@@ -1,0 +1,239 @@
+@font-face {
+    font-family: Abril Fatface;
+    src: url(./fonts/AbrilFatface-Regular.ttf);
+}
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src: url(./fonts/Raleway-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(./fonts/Raleway-Regular.ttf);
+}
+@mixin no-horizontal-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+@mixin no-horizontal-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+body{
+   background-color: #FAFAFA; 
+}
+.about-text {
+        font-size: 120%;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+.top-section {
+    margin-top: 1%;
+    margin-bottom: 3%;
+    display: inline-block;
+    align-items: center;
+}
+.blog-header-section {
+    margin-top: 5%;
+    margin-bottom: 1%;
+    display: flex;
+    text-align: center;
+}
+body {
+    font-family: "Raleway";
+    overflow-x: hidden;
+}
+.panel-default {
+    border-radius: 0px;
+    border-color: #000 !important;
+}
+.panel > .panel-heading {
+    border-radius: 0px;
+    background-image: none;
+    background-color: #19191B;
+    border-color: #19191B !important;
+    color: #fff;
+    font-family: "Raleway-ExtraBold";
+}
+.panel-footer {
+    background-color: #626169;
+    color: #fff;
+    border-radius: 0px;
+    font-family: "Raleway";
+}
+.name-typography {
+    font-family: 'Abril Fatface';
+    font-size: 520%;
+    text-align: center;
+    align-items: center;
+    @include no-horizontal-padding();
+}
+.moto-typography {
+    font-family: 'Raleway';
+    font-size: 250%;
+    text-align: center;
+    align-items: center;
+    @include no-horizontal-padding();
+}
+.moto-blog-typography {
+    font-family: 'Raleway';
+    font-size: 320%;
+    text-align: center;
+    align-items: center;
+}
+.undersection-typography {
+    font-family: 'Raleway';
+    font-size: 250%;
+    margin-bottom: 3%;
+}
+.post-info-typography {
+    color: #A9A9A9;
+}
+.profile-image {
+    margin:auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.option-section {
+    margin-top: 20px;
+}
+.navbar-default {
+    background: #fff;
+    border-bottom: 1px solid black;
+    box-shadow: none;
+}
+.active-nav {
+    color: #4285F4 !important;
+}
+ul.nav.navbar-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+.nav-option {
+    width: 20%;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 150%;
+}
+.nav-option:hover {
+    color: #A9A9A9;
+}
+.separator-nav {
+    width: 20%;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 150%;
+}
+.panel-default.panel-heading {
+    background-color: #000 !important;
+}
+.menu-link:hover {
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+}
+.blog-link:hover {
+    text-decoration: underline;
+}
+.p {
+    line-height: 1.5 !important;
+}
+.blog-section {
+    @include no-horizontal-margin();
+}
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:5px !important; 
+    padding-bottom:5px !important;
+    height: 35px;
+}
+.navbar {
+    min-height:28px !important;
+}
+.contact-typography {
+    font-size: 180%;
+    margin-left: 3%;
+}
+.contact-container {
+    display: flex;
+    align-items: center; /* align vertical */
+}
+.blog-tittle {
+    font-size: 180%;
+}
+.blog-post {
+    font-size: 120%;
+}
+.consulting-info-typography {
+    font-size: 120%;
+}
+@media only screen and (max-device-width: 767px) {
+      .profile-image {
+          max-width: 50%;
+      }
+      .container-menu {
+          width: 100vw;
+          margin-left: initial;
+          margin-right: initial;
+      }
+      .separator-nav {
+          display: none !important;
+      }
+      .nav-option {
+          width: 33%;
+          font-size: 200%;
+      }
+      .name-typography {
+          justify-content: center;
+      }
+      .moto-typography {
+          justify-content: center;
+      }
+      .about-text {
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-bottom: 500px;
+      }
+      .blog-section {
+          margin-left: 10px;
+          margin-right: 10px;
+      }
+      .contact-typography {
+          font-size: 300% !important;
+          margin-left: 3%;
+      }
+      .top-section {
+          margin-top: 5%;
+      }
+      .about-text {
+          font-size: 200% !important;
+      }
+      .blog-tittle {
+        font-size: 200%;
+      }
+        .blog-post {
+        font-size: 150%;
+      }
+      .navbar-nav > li > a, .navbar-brand {
+        padding-top:15px !important; 
+        padding-bottom:10px !important;
+        height: 50px;
+      }
+      .navbar {
+        min-height:50px !important;
+      }
+  } 
+  @media only screen and (min-device-width: 992px) and (max-device-width: 1634px) {
+      .name-typography { 
+          font-size: 300% !important;
+      }
+      .moto-typography {
+          font-size: 130% !important;
+      }
+  }
+  
