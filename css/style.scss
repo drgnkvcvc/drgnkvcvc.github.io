@@ -183,12 +183,15 @@ ul.nav.navbar-nav {
           width: 100vw;
           margin-left: initial;
           margin-right: initial;
+          padding-left: 0px;
+          padding-right: 0px;
       }
       .separator-nav {
           display: none !important;
       }
       .nav-option {
           width: 33%;
+          text-align: center;
       }
       .name-typography {
           justify-content: center;
@@ -199,6 +202,7 @@ ul.nav.navbar-nav {
       .about-text {
           margin-right: 10px;
           margin-bottom: 500px;
+          text-align: initial;
       }
       .blog-section {
           margin-right: 10px;
