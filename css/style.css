@@ -152,9 +152,12 @@ ul.nav.navbar-nav {
   margin-left: 3%; }
 
 .contact-container {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   /* align vertical */ }
+
+.img-contact {
+  max-width: 100px; }
 
 .blog-tittle {
   font-size: 180%; }
@@ -163,7 +166,7 @@ ul.nav.navbar-nav {
   font-size: 120%; }
 
 .consulting-info-typography {
-  font-size: 120%; }
+  font-size: 150%; }
 
 @media only screen and (max-device-width: 767px) {
   .profile-image {
@@ -178,8 +181,7 @@ ul.nav.navbar-nav {
     display: none !important; }
 
   .nav-option {
-    width: 33%;
-    font-size: 200%; }
+    width: 33%; }
 
   .name-typography {
     justify-content: center; }
@@ -188,17 +190,21 @@ ul.nav.navbar-nav {
     justify-content: center; }
 
   .about-text {
-    margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 500px; }
 
   .blog-section {
-    margin-left: 10px;
     margin-right: 10px; }
 
+  .contact-container {
+    margin-top: 25px; }
+
   .contact-typography {
-    font-size: 300% !important;
+    font-size: 150% !important;
     margin-left: 3%; }
+
+  .consulting-info-typography {
+    font-size: 70%; }
 
   .top-section {
     margin-top: 5%; }
@@ -210,7 +216,7 @@ ul.nav.navbar-nav {
     font-size: 200%; }
 
   .blog-post {
-    font-size: 150%; }
+    font-size: 120%; }
 
   .navbar-nav > li > a, .navbar-brand {
     padding-top: 15px !important;
