@@ -38,6 +38,8 @@ body {
 .top-section {
     margin-top: 1%;
     margin-bottom: 3%;
+    margin-left: 0px;
+    margin-right: 0px;
     display: inline-block;
     align-items: center;
 }
@@ -295,6 +297,7 @@ ul.nav.navbar-nav {
     }
     .about-text {
         font-size: 200% !important;
+        margin-bottom: 100px !important;
     }
     .blog-tittle {
         font-size: 200%;
@@ -319,5 +322,8 @@ ul.nav.navbar-nav {
     }
     .moto-typography {
         font-size: 130% !important;
+    }
+    .about-text {
+        margin-bottom: 100px !important;
     }
 }
