@@ -9,7 +9,8 @@
   src: url(./fonts/Raleway-Regular.ttf); }
 body {
   background-color: #FAFAFA;
-  box-sizing: initial; }
+  box-sizing: initial;
+  width: auto; }
 
 .about-text {
   font-size: 120%;
@@ -26,7 +27,9 @@ body {
   margin-top: 5%;
   margin-bottom: 1%;
   display: flex;
-  text-align: center; }
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px; }
 
 body {
   font-family: "Raleway"; }
@@ -161,11 +164,16 @@ ul.nav.navbar-nav {
 
 .contact-typography {
   font-size: 180%;
-  margin-left: 3%; }
+  margin-left: 3%;
+  margin-top: 2%; }
+
+.linkedin-contact {
+  margin-top: 4%; }
 
 .contact-container {
-  display: inline-flex;
+  display: inline;
   align-items: center;
+  text-align: left;
   /* align vertical */ }
 
 .img-contact {
@@ -175,7 +183,7 @@ ul.nav.navbar-nav {
   font-size: 180%; }
 
 .blog-post {
-  font-size: 120%; }
+  font-size: 130%; }
 
 .blog-post-text {
   font-size: 150%;
@@ -183,7 +191,7 @@ ul.nav.navbar-nav {
   padding-bottom: 10px; }
 
 .consulting-info-typography {
-  font-size: 150%; }
+  font-size: 130%; }
 
 @media only screen and (max-device-width: 767px) {
   .profile-image {
@@ -222,7 +230,11 @@ ul.nav.navbar-nav {
 
   .contact-typography {
     font-size: 150% !important;
-    margin-left: 3%; }
+    margin-left: 3%;
+    margin-top: 0% !important; }
+
+  .linkedin-contact {
+    margin-top: 2% !important; }
 
   .consulting-info-typography {
     font-size: 70%; }
