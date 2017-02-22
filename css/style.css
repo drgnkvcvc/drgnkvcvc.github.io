@@ -242,7 +242,11 @@ ul.nav.navbar-nav {
     font-size: 70%; }
 
   .top-section {
-    margin-top: 5%; }
+    margin-top: 5%;
+    font-size: 70%; }
+
+  .nav-option {
+    font-size: 110%; }
 
   .about-text {
     font-size: 200% !important;
