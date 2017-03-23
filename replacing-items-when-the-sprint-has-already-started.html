@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name=”description” content=”Blog about Product Management, Project Management, Agile, Scrum, Kanban, User Experience
+        and Interaction Design by Dragan Kovacevic. Replacing Items when the Sprint has Already Started”>
+    <title>Replacing Items when the Sprint has Already Started</title>
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Replacing Items when the Sprint has Already Started ">
+    <meta name="twitter:description" content="There’s an ongoing discussion in the Scrum community whether you should you replace a sprint backlog item with a product backlog item of equal size, when the sprint has already started. What inspired me to write this blog post is that I have have heard some Scrum Masters dogmatically preaching that sprint backlog items should remain locked down in that situation, no matter what.">
+    <meta name="twitter:image" content="http://kovacevic.io/img/replacing-items-after-the-sprint-has-started.jpg">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/hover.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://kovacevic.io/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://kovacevic.io/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://kovacevic.io/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://kovacevic.io/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://kovacevic.io/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://kovacevic.io/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://kovacevic.io/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://kovacevic.io/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="http://kovacevic.io/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="http://kovacevic.io/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="http://kovacevic.io/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="http://kovacevic.io/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="http://kovacevic.io/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Resolving Problems Before Writing Code" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="http://kovacevic.io/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="http://kovacevic.io/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="http://kovacevic.io/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="http://kovacevic.io/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="http://kovacevic.io/mstile-310x310.png" />
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-92039211-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script>
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid container-menu">
+            <ul class="nav navbar-nav">
+                <li class="nav-option active-nav"><a class="hvr-wobble-horizontal" href="index.html">Blog</a></li>
+                <li class="separator-nav">/</li>
+                <li class="nav-option"><a class="hvr-wobble-horizontal" href="consulting.html">Consulting</a></li>
+                <li class="separator-nav">/</li>
+                <li class="nav-option"><a class="hvr-wobble-horizontal" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row blog-header-section">
+        <div class="col-md-offset-3 "></div>
+        <div class="col-md-6 col-xs-12">
+            <p class="moto-blog-typography animated bounceIn">Replacing Items when the Sprint has Already Started</p>
+        </div>
+    </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            <a class="twitter-share-button" href="http://kovacevic.io/replacing-items-when-the-sprint-has-already-started.html">
+Tweet</a>
+            <script src="//platform.linkedin.com/in.js" type="text/javascript">
+                lang: en_US
+            </script>
+            <script type="IN/Share" data-url="kovacevic.io/replacing-items-when-the-sprint-has-already-started.html"></script>
+        </div>
+    </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            There’s an ongoing discussion in the Scrum community whether you should you replace a sprint backlog item with a product
+            backlog item of equal size, when the sprint has already started. What inspired me to write this blog post is
+            that I have have heard some Scrum Masters dogmatically preaching that sprint backlog items should remain locked
+            down in that situation, no matter what.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            Their arguments ranged from: “It will downgrade teams level of motivation” to “What is the point of Sprint then? That is
+            against the rules!”. While there certainly are some downsides, wearing a Scrum Master hat requires being pragmatic,
+            as well as knowing when you should negotiate and when you should not.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            Here are the reasons why you should replace items when the Sprint has already started if the business requires it:
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            1. It is the business which enables the product to strive and survive, not the development process. Sometimes, you have to
+            intervene right away for the business itself to keep going. Just think of any banking software – a severe bug
+            in a production environment might cause so much damage that it could ruin the bank. Would you have the luxury
+            of being dogmatic about your development process then?
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            2. Ok, not all of us are in the banking business. Some of us are developing Social Networks for pets, and can tolerate bugs
+            in production environment for a few weeks. So, no need to ever replace a Sprint backlog item, right? Well, no.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            What if the business priorities change and some features from the product backlog become way more important than some features
+            in the Sprint backlog? <a href="http://agilemanifesto.org/principles.html" target="_blank">Agile Manifesto</a>            says “Responding to change over following a plan. So, if the plan is not reflecting business priorities anymore,
+            why should you follow it?
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            3.<i> Ok, but still, Scrum says that we should not do it!</i> Really, where and when did the Scrum say that?
+            <a href="http://www.scrumguides.org/docs/scrumguide/v1/scrum-guide-us.pdf" target="_blank">Scrum guide</a> is
+            actually pretty silent on this topic. Except for saying that <i>during the Sprint no changes are made that would endanger the Sprint Goal</i>            and that <i>scope may be clarified and re-negotiated between the product owner and the development team as more is learned</i>.
+            Although some influential people in the Scrum community strongly suggest that you should not replace Sprint backlog
+            items when the Sprint has started, this is not what Scrum guide claims.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            In reality, sprint goals can change. Scope can be modified both because of the business needs and because of the bad development
+            insights. However, a Sprint where you have replaced a Sprint backlog item with some other product backlog item
+            can still be a successful Sprint, provided that you have delivered the needed value.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            4. In the end, are there any other options? If the product backlog item is really more important than the whole Sprint goal,
+            the only other option from the Scrum guide is for the product owner to cancel the sprint and start a new one.
+            Although this is allowed by the Scrum guide, effects of it can be tremendously devastating for the development
+            team’s motivation, way more than just replacing a Sprint backlog item.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            Now, I am not saying that you should be doing this every single time someone requests it. Scrum Master should educate the
+            product owner about the downsides of doing this often, and the product owner should carefully decide whether
+            the issue can wait for the next Sprint. As for the development team, it is up to the Scrum Master to coach them
+            about how the business works.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            Final question is where is the limit? Well, if the this is happening on a regular basis, it probably means that you are in
+            a <a href="https://en.wikipedia.org/wiki/Cynefin_framework#Chaotic" target="_blank">Chaotic environment</a>.
+            If you identify with this environment you might want to reconsider whether the Scrum is the best framework for
+            you to use and go with <a href="http://kovacevic.io/kanban-in-real-life.html" target="_blank">Kanban</a> instead.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            Thanks for reading, and if you have any comments or questions, feel free to hit me up on <a href="https://twitter.com/DraganOfficial"
+                target="_blank">Twitter</a> or <a href="https://www.linkedin.com/in/dragank/" target="_blank">Linkedin</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
