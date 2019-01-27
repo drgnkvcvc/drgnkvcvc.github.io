@@ -192,6 +192,10 @@ ul.nav.navbar-nav {
   padding-top: 10px;
   padding-bottom: 10px; }
 
+  .IN-widget {
+    vertical-align: top !important;
+  }
+
 .consulting-info-typography {
   font-size: 130%; }
 
