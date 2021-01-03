@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name=”description” content=”Blog about Product Management, Project Management, Agile, Scrum, Kanban, User Experience
+        and Interaction Design by Dragan Kovacevic. Product Managers are Responsible for Managing Technical Debt.”>
+    <title>Product Managers are Responsible for Managing Technical Debt</title>
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Product Managers are Responsible for Managing Technical Debt">
+    <meta name="twitter:description" content="Product Managers are responsible for managing Technical Debt. Or at least should be.">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/hover.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://kovacevic.io/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://kovacevic.io/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://kovacevic.io/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://kovacevic.io/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://kovacevic.io/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://kovacevic.io/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://kovacevic.io/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://kovacevic.io/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="http://kovacevic.io/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="http://kovacevic.io/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="http://kovacevic.io/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="http://kovacevic.io/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="http://kovacevic.io/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Moving Products Forward" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="http://kovacevic.io/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="http://kovacevic.io/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="http://kovacevic.io/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="http://kovacevic.io/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="http://kovacevic.io/mstile-310x310.png" />
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-92039211-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script>
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid container-menu">
+            <ul class="nav navbar-nav">
+                <li class="nav-option active-nav"><a class="hvr-wobble-horizontal" href="index.html">Blog</a></li>
+                <li class="separator-nav">/</li>
+                <li class="nav-option"><a class="hvr-wobble-horizontal" href="consulting.html">Consulting</a></li>
+                <li class="separator-nav">/</li>
+                <li class="nav-option"><a class="hvr-wobble-horizontal" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row blog-header-section">
+        <div class="col-md-offset-3 "></div>
+        <div class="col-md-6 col-xs-12">
+            <p class="moto-blog-typography animated bounceIn">Product Managers are Responsible for Managing Technical Debt</p>
+        </div>
+    </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            <a class="twitter-share-button" href="http://kovacevic.io/product-managers-are-responsible-for-managing-technical-debt.html">
+Tweet</a>
+            <script src="//platform.linkedin.com/in.js" type="text/javascript">
+                lang: en_US
+            </script>
+            <script type="IN/Share" data-url="kovacevic.io/product-managers-are-responsible-for-managing-technical-debt.html"></script>
+        </div>
+    </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+            Product Managers are responsible for managing Technical Debt. Or at least should be. When I make this statement, I often get threatened by an angry mob, chanting that I should be banished from this plane of existence. At other times… I get highly skeptical looks and a question "Why?"
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInLeft">
+        Why, you ask? Because questions around Technical Debt are business questions that are ultimately tied to the future of the product. Managing Technical Debt is more than typical risk management. If left untacked, technical debt could devastate your competitive advantage over a few years, by decreasing your development velocity. The consequences of technical debt can ruin your brand reputation. If you are a B2B company, technical debt can end up in lawsuits from your customers. Mismanaging technical debt can even result in your most talented employees leaving. 
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+        <b>No Go Zone</b><br>
+        By now, most companies figured out that Product Managers without a technical background can make a tremendous business impact. I feel a need to note that I was a Software Engineer before I transitioned into Product Management, so this is not a defensive statement by any means.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInLeft">
+        But for some silly reason, if a business decision is even slightly technical, it gets pulled out from Product Managers' area of responsibility. Responsibility for managing technical debt is the prime example of that. Typical excuses are that Product Managers don't have the skills or enough insights to do it properly. But I beg to differ - it's not the matter of technical skills. It's a matter of soft skills, process and business acumen.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+        I firmly believe that there are two key factors when it comes to this topic: understanding technical debt and prioritizing technical debt.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInLeft">
+        <b>Better Communication is Crucical</b><br>
+        I noticed that most Product Managers struggle to understand technical debt because they have communication issues with Software Engineers. Technical debt problems are often complex, and non-senior engineers often struggle with explaining the problem itself. In general, people tend to ignore the problems they don't understand, until those problems hit them in the face. The same goes for Product Managers. 
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+        Another common communication problem lies in the discrepancy between skills and expectations. Most Software Engineers I have meet in my life care about their craft, which typically doesn't include sales skills. In return, they end up pitching technical debt problems that don't sound so important for the business. Often about developer productivity and delivery velocity. On the other hand, Product Managers are often swarmed with backlogs of things that sound important for the business, as business-oriented stakeholders are more persuasive than Software Engineers. Therefore, Product Managers don't take these pitches from Software Engineers as seriously as they should.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInLeft">
+        <b>Prioritizing the Technical Debt is a Business Decision</b><br>
+        I'm a strong advocate of prioritizing backlogs in alignment with the company goals. I won't dive into explaining how OKRs should be set up, because it's a topic unto itself, and there's plenty of quality material available on the internet. There is no reason why the same approach shouldn't be used for technical debt.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+        Often, it feels like there is a disconnect between the company OKRs and technical debt. But OKRs are usually connected to technical debt, unless the horizon of your company's strategy is shorter than one year. The problem is in finding the connection.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInLeft">
+        A typical place to start is to look into 'technical' KRs, such as '0 SLA1-level problems' or' 99.95% uptime'. If you start considering the implication of technical debt and have enough data, you will likely find the connection to the business KRs. A prime example of such KRs is reducing user churn, because bugs and downtime often end up abandoning your application. I can't emphasize enough that you need enough data. If you can't find any link between these issues, the first technical debt improvement you might want to resolve is improving your applications' monitoring stack.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+        Technical debt can even be correlated to the HR KRs. I know of some companies that could acquire interesting insights if they asked questions about managing technical debt on exit interviews with their Software Engineers. 
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInLeft">
+        <b>But why should Product Managers manage the Technical Debt?</b><br>
+        As I explained above, managing technical debt is more than the typical risk management. But why should Product Managers be the ones to do it? The short answer is: because no one else can do it well. Prioritizing something in the backlog requires a holistic view of all the business priorities. And having that view is the Product Manager's job.
+    </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+        The worst approach, and unfortunately, the most common approach, is to agree on the "fixed time" for technical debt. For example, two days of every Sprint, developers can work on any technical debt they feel like working on. The problem with this approach is that it's not evaluating technical debt against the current business needs. Sometimes, what business needs is developers entirely focusing on delivering an important feature set for the next few Sprints. Sometimes, what business needs is to focus the whole Sprint on the refactoring legacy part of the architecture, because the potential outcomes of leaving that piece of technical debt untackled is frightening.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInLeft">
+        <b>Technical Debt Management Strategies</b><br>
+        Here are a few strategies that might help Product Managers with managing technical debt:
+        <br> • Do correlation mapping sessions - Correlating technical debt to OKRs is a team sport. At least include your technical counterpart in the process, if not the whole team. And don't forget that you might need to re-assess the correlation from time to time.
+        <br> • Create templates - Understanding all the intricacies of technical debt problems is time-consuming. And time is usually the resource that Product Managers lack. What helped me with this is creating a template for technical debt problems. The technical debt problem template can include a summary and details like KR it impacts, worst-case outcomes, and timelines for those outcomes. The next step is having your Software Engineers populate that template each time they pitch a technical debt problem. It will make communication faster, but it will also help coach your Software Engineers about the business impact.
+        <br> • Raise transparency through data - Periodically send out a summary of technical debt problems that were resolved, including the potential worst-case outcomes prevented. It will help relevant stakeholders understand the complexity of your team's work and raise your teams' morale. 
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInRight">
+        None of these strategies mean that you have less responsibility for the prioritization decisions you make in the end. Same as for anything you prioritize in the backlog.
+        </div>
+    </div>
+    <div class="row blog-section" id="blog-section">
+        <div class="col-md-3 col-xs-0"></div>
+        <div class="col-md-6 col-xs-12 blog-post-text animated bounceInLeft">
+        In case you are a Product Manager, and you still believe that you should not manage the technical debt, I would dare say that you don't understand the importance of technical debt. If so, please feel free to challenge me on <a href = "http://twitter.com/drnkvc">Twitter</a>.
+        </div>
+    </div>
+   
+    <br>
+    <br>
+    <br>
