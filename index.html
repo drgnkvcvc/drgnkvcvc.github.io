@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,11 +18,12 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-image: radial-gradient(circle, rgba(0,31,63,1), rgba(0,10,20,1));
+            background-image: radial-gradient(circle, rgba(0, 31, 63, 1), rgba(0, 10, 20, 1));
         }
 
         .container {
             max-width: 900px;
+            width: 90%;  /* Added for mobile responsiveness */
             background-color: rgba(0, 20, 39, 1.0); /* Slightly transparent black */
             padding: 40px 50px;
             border-radius: 12px;
@@ -74,12 +76,50 @@
         .email:hover {
             border-color: #50b3a2; /* Teal */
         }
+
+        /* Media Queries for Responsiveness */
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 25px 30px;
+            }
+
+            img {
+                max-width: 180px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            img {
+                max-width: 150px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+
     </style>
 </head>
+
 <body>
     <div class="container">
-        <img src="/img
-/profile_22_c.png" alt="Dragan Kovačević">
+        <img src="/img/profile_22_c.png" alt="Dragan Kovačević">
         <h1>Dragan Kovacevic</h1>
         <h2>Software Product Development Consultant</h2>
         <p>
@@ -93,4 +133,5 @@
         </div>
     </div>
 </body>
+
 </html>
